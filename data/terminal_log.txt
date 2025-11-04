@@ -1,0 +1,1085 @@
+Session Started: 2025-11-03 20:12:37
+Log File: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+================================================================================
+
+2025-11-03 20:12:37.209 [INFO]  Terminal logging started. Log file: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+2025-11-03 20:12:37.209 [INFO]  Starting application...
+2025-11-03 20:12:37.210 [INFO]  Current working directory: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:12:37.211 [INFO]  Script location: g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py
+2025-11-03 20:12:37.212 [INFO]  Frozen: False
+2025-11-03 20:12:37.213 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:12:37.214 [INFO]  Looking for resource: src/config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:12:37.215 [INFO]  Resource exists: True
+2025-11-03 20:12:37.216 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:12:37.217 [INFO]  Looking for resource: config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\config.yaml
+2025-11-03 20:12:37.218 [INFO]  Resource exists: False
+2025-11-03 20:12:37.218 [INFO]  Trying config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:12:37.219 [INFO]  Found config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:12:37.224 [INFO]  Successfully loaded config: {'auth_server': {'host': 'geo-copilot-auth-server.buildnexai.com', 'port': '', 'secret': 'mysecret'}, 'database': {'database': '../data/flet.db'}, 'plaxis': {'password': 'W@%4>RTT4N?Tf@@n', 'plaxis_path': 'C:\\Program Files\\Bentley\\Geotechnical\\PLAXIS 2D CONNECT Edition V20\\Plaxis2DXInput.exe', 'port_i': '10000', 'port_o': '10001'}}
+2025-11-03 20:12:37.225 [INFO]  ======================================================================
+2025-11-03 20:12:37.226 [INFO]  DATABASE PATH RESOLUTION
+2025-11-03 20:12:37.227 [INFO]  ======================================================================
+2025-11-03 20:12:37.228 [INFO]  Config DB path: ../data/flet.db
+2025-11-03 20:12:37.229 [INFO]  Resolved DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:12:37.230 [INFO]  Database exists: True
+2025-11-03 20:12:37.231 [INFO]  ======================================================================
+2025-11-03 20:12:37.232 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:12:37.234 [INFO]  Files in database directory: ['anchor_properties.csv', 'borehole_data.csv', 'circular_steel_properties.xlsx', 'erss_wall_details.csv', 'excavation_stages.csv', 'flet.db', 'geometry.csv', 'geo_design_project.gcp', 'geo_design_project_1.gcp', 'geo_design_project_2.gcp', 'import', 'InputData.xlsx', 'Input_Data.xlsx', 'lineload.csv', 'ModelInfo.xlsx', 'output_data.xlsx', 'project_data.csv', 'Sheet_Pile_Properties.xlsx', 'Soil_DB.xlsx', 'Steel_member_properties.xlsx', 'strut_details.csv', 'terminal_log.txt']
+2025-11-03 20:12:37.234 [INFO]  ======================================================================
+2025-11-03 20:12:37.235 [INFO]  DATABASE LOCATION CHECK
+2025-11-03 20:12:37.236 [INFO]  ======================================================================
+2025-11-03 20:12:37.237 [INFO]  Requested DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:12:37.238 [INFO]  Absolute DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:12:37.239 [INFO]  Database exists: True
+2025-11-03 20:12:37.241 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:12:37.243 [INFO]  ======================================================================
+2025-11-03 20:12:37.273 [INFO]  Existing tables in database: ['project_info', 'sqlite_sequence', 'borehole_data', 'geometry', 'soil_properties', 'userdetails', 'erss_wall_details', 'lineload', 'anchor_properties', 'strutdetails', 'excavationstages', 'sequenceconstruct', 'user_plaxis_config']
+2025-11-03 20:12:37.275 [INFO]  Database ready at: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:12:37.275 [INFO]  Database config loaded successfully: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:12:37.280 [INFO]  Loaded config from YAML file
+2025-11-03 20:12:37.281 [INFO]  Auth server URL: https://geo-copilot-auth-server.buildnexai.com:
+2025-11-03 20:12:37.283 [INFO]  ModelCreator BASE_DIR: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:12:37.288 [INFO]  DEBUG: Loading concrete grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:12:37.289 [INFO]  DEBUG: File exists: False
+2025-11-03 20:12:37.290 [INFO]  ERROR: ConcreteDB.xlsx not found at G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:12:37.291 [INFO]  WARNING: Using default concrete grades
+2025-11-03 20:12:37.292 [INFO]  DEBUG: Loading steel grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\SteelDB.xlsx
+2025-11-03 20:12:37.293 [INFO]  ERROR loading steel grades: [Errno 2] No such file or directory: 'G:\\BuildNex AI\\geo_co_pilot-HasiniNew\\data\\SteelDB.xlsx'
+2025-11-03 20:12:37.294 [INFO]  Resource path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data/Steel_member_properties.xlsx
+2025-11-03 20:12:37.294 [INFO]  File exists: True
+2025-11-03 20:12:37.296 [INFO]  DEBUG: Loading soil properties from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:12:37.362 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:12:37.364 [INFO]  DEBUG: Headers in Soil Properties sheet: ['MaterialName', 'SoilModel', 'DrainageType', 'SPT', 'gammaUnsat', 'gammaSat', 'Eref', 'nu', 'cref', 'phi', 'kx', 'ky', 'Strength', 'Rinter', 'K0Determination', 'K0Primary', 'Colour']
+2025-11-03 20:12:37.365 [INFO]  DEBUG: Loaded properties for material: Fill
+2025-11-03 20:12:37.366 [INFO]  DEBUG: Loaded properties for material: F1
+2025-11-03 20:12:37.367 [INFO]  DEBUG: Loaded properties for material: F2
+2025-11-03 20:12:37.368 [INFO]  DEBUG: Loaded properties for material: OA(E)
+2025-11-03 20:12:37.369 [INFO]  DEBUG: Loaded properties for material: OA(D)
+2025-11-03 20:12:37.370 [INFO]  DEBUG: Loaded properties for material: OA(C)
+2025-11-03 20:12:37.371 [INFO]  DEBUG: Loaded properties for material: OA(B)
+2025-11-03 20:12:37.372 [INFO]  DEBUG: Loaded properties for material: OA(A)
+2025-11-03 20:12:37.373 [INFO]  DEBUG: Loaded properties for material: G(II)
+2025-11-03 20:12:37.374 [INFO]  DEBUG: Loaded properties for material: G(III)
+2025-11-03 20:12:37.375 [INFO]  DEBUG: Loaded properties for material: G(IV)
+2025-11-03 20:12:37.376 [INFO]  DEBUG: Loaded properties for material: G(V)
+2025-11-03 20:12:37.377 [INFO]  DEBUG: Loaded properties for material: G(VI)
+2025-11-03 20:12:37.379 [INFO]  DEBUG: Loaded properties for material: S(II)
+2025-11-03 20:12:37.380 [INFO]  DEBUG: Loaded properties for material: S(III)
+2025-11-03 20:12:37.382 [INFO]  DEBUG: Loaded properties for material: S(IV)
+2025-11-03 20:12:37.383 [INFO]  DEBUG: Loaded properties for material: S(V)
+2025-11-03 20:12:37.384 [INFO]  DEBUG: Loaded properties for material: S(VI)
+2025-11-03 20:12:37.385 [INFO]  DEBUG: Total materials with properties: 18
+2025-11-03 20:12:37.386 [INFO]  DEBUG: Materials will be loaded on demand
+2025-11-03 20:12:37.390 [INFO]  DEBUG: Looking for Excel file at: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:12:37.419 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:12:37.420 [INFO]  DEBUG: Found material: Fill
+2025-11-03 20:12:37.421 [INFO]  DEBUG: Found material: F1
+2025-11-03 20:12:37.422 [INFO]  DEBUG: Found material: F2
+2025-11-03 20:12:37.422 [INFO]  DEBUG: Found material: OA(E)
+2025-11-03 20:12:37.423 [INFO]  DEBUG: Found material: OA(D)
+2025-11-03 20:12:37.424 [INFO]  DEBUG: Found material: OA(C)
+2025-11-03 20:12:37.425 [INFO]  DEBUG: Found material: OA(B)
+2025-11-03 20:12:37.426 [INFO]  DEBUG: Found material: OA(A)
+2025-11-03 20:12:37.427 [INFO]  DEBUG: Found material: G(II)
+2025-11-03 20:12:37.428 [INFO]  DEBUG: Found material: G(III)
+2025-11-03 20:12:37.428 [INFO]  DEBUG: Found material: G(IV)
+2025-11-03 20:12:37.431 [INFO]  DEBUG: Found material: G(V)
+2025-11-03 20:12:37.432 [INFO]  DEBUG: Found material: G(VI)
+2025-11-03 20:12:37.433 [INFO]  DEBUG: Found material: S(II)
+2025-11-03 20:12:37.434 [INFO]  DEBUG: Found material: S(III)
+2025-11-03 20:12:37.435 [INFO]  DEBUG: Found material: S(IV)
+2025-11-03 20:12:37.436 [INFO]  DEBUG: Found material: S(V)
+2025-11-03 20:12:37.437 [INFO]  DEBUG: Found material: S(VI)
+2025-11-03 20:12:37.438 [INFO]  DEBUG: Total materials found: 18
+2025-11-03 20:12:40.521 [INFO]  Unhandled error processing page session :
+2025-11-03 20:12:40.523 [INFO]  Traceback (most recent call last):
+  File "c:\Users\globeitzone.lk\AppData\Local\Programs\Python\Python310\lib\site-packages\flet\app.py", line 247, in on_session_created
+    await asyncio.get_running_loop().run_in_executor(
+  File "c:\Users\globeitzone.lk\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py", line 280, in app_initialize
+    app_instance.initialize(page)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\form_app.py", line 346, in initialize
+    self.sign_in_page = LoginScreen(self.db_config, self.handle_sign_in)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\login_screen.py", line 17, in __init__
+    self.primary_color = ft.colors.BLUE_600
+AttributeError: module 'flet' has no attribute 'colors'
+2025-11-03 20:12:45.538 [INFO]  Application ended normally
+2025-11-03 20:12:45.539 [INFO]  Cleaning up and saving log file...
+
+================================================================================
+Session Ended: 2025-11-03 20:12:45
+================================================================================
+
+================================================================================
+Session Ended: 2025-11-03 20:12:45
+================================================================================
+
+================================================================================
+================================================================================
+
+================================================================================
+GeoCoPilot Application Log - Run #9
+Session Started: 2025-11-03 20:16:33
+Log File: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+================================================================================
+
+2025-11-03 20:16:33.411 [INFO]  Terminal logging started. Log file: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+2025-11-03 20:16:33.412 [INFO]  Starting application...
+2025-11-03 20:16:33.413 [INFO]  Current working directory: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:16:33.414 [INFO]  Script location: g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py
+2025-11-03 20:16:33.414 [INFO]  Frozen: False
+2025-11-03 20:16:33.415 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:16:33.416 [INFO]  Looking for resource: src/config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:16:33.417 [INFO]  Resource exists: True
+2025-11-03 20:16:33.418 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:16:33.419 [INFO]  Looking for resource: config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\config.yaml
+2025-11-03 20:16:33.420 [INFO]  Resource exists: False
+2025-11-03 20:16:33.421 [INFO]  Trying config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:16:33.422 [INFO]  Found config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:16:33.427 [INFO]  Successfully loaded config: {'auth_server': {'host': 'geo-copilot-auth-server.buildnexai.com', 'port': '', 'secret': 'mysecret'}, 'database': {'database': '../data/flet.db'}, 'plaxis': {'password': 'W@%4>RTT4N?Tf@@n', 'plaxis_path': 'C:\\Program Files\\Bentley\\Geotechnical\\PLAXIS 2D CONNECT Edition V20\\Plaxis2DXInput.exe', 'port_i': '10000', 'port_o': '10001'}}
+2025-11-03 20:16:33.428 [INFO]  ======================================================================
+2025-11-03 20:16:33.429 [INFO]  DATABASE PATH RESOLUTION
+2025-11-03 20:16:33.430 [INFO]  ======================================================================
+2025-11-03 20:16:33.431 [INFO]  Config DB path: ../data/flet.db
+2025-11-03 20:16:33.432 [INFO]  Resolved DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:16:33.433 [INFO]  Database exists: True
+2025-11-03 20:16:33.434 [INFO]  ======================================================================
+2025-11-03 20:16:33.434 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:16:33.436 [INFO]  Files in database directory: ['anchor_properties.csv', 'borehole_data.csv', 'circular_steel_properties.xlsx', 'erss_wall_details.csv', 'excavation_stages.csv', 'flet.db', 'geometry.csv', 'geo_design_project.gcp', 'geo_design_project_1.gcp', 'geo_design_project_2.gcp', 'import', 'InputData.xlsx', 'Input_Data.xlsx', 'lineload.csv', 'ModelInfo.xlsx', 'output_data.xlsx', 'project_data.csv', 'Sheet_Pile_Properties.xlsx', 'Soil_DB.xlsx', 'Steel_member_properties.xlsx', 'strut_details.csv', 'terminal_log.txt']
+2025-11-03 20:16:33.437 [INFO]  ======================================================================
+2025-11-03 20:16:33.438 [INFO]  DATABASE LOCATION CHECK
+2025-11-03 20:16:33.441 [INFO]  ======================================================================
+2025-11-03 20:16:33.443 [INFO]  Requested DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:16:33.444 [INFO]  Absolute DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:16:33.445 [INFO]  Database exists: True
+2025-11-03 20:16:33.446 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:16:33.447 [INFO]  ======================================================================
+2025-11-03 20:16:33.578 [INFO]  Existing tables in database: ['project_info', 'sqlite_sequence', 'borehole_data', 'geometry', 'soil_properties', 'userdetails', 'erss_wall_details', 'lineload', 'anchor_properties', 'strutdetails', 'excavationstages', 'sequenceconstruct', 'user_plaxis_config']
+2025-11-03 20:16:33.580 [INFO]  Database ready at: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:16:33.580 [INFO]  Database config loaded successfully: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:16:33.585 [INFO]  Loaded config from YAML file
+2025-11-03 20:16:33.586 [INFO]  Auth server URL: https://geo-copilot-auth-server.buildnexai.com:
+2025-11-03 20:16:33.587 [INFO]  ModelCreator BASE_DIR: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:16:33.594 [INFO]  DEBUG: Loading concrete grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:16:33.626 [INFO]  DEBUG: File exists: False
+2025-11-03 20:16:33.637 [INFO]  ERROR: ConcreteDB.xlsx not found at G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:16:33.638 [INFO]  WARNING: Using default concrete grades
+2025-11-03 20:16:33.641 [INFO]  DEBUG: Loading steel grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\SteelDB.xlsx
+2025-11-03 20:16:33.643 [INFO]  ERROR loading steel grades: [Errno 2] No such file or directory: 'G:\\BuildNex AI\\geo_co_pilot-HasiniNew\\data\\SteelDB.xlsx'
+2025-11-03 20:16:33.644 [INFO]  Resource path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data/Steel_member_properties.xlsx
+2025-11-03 20:16:33.646 [INFO]  File exists: True
+2025-11-03 20:16:33.648 [INFO]  DEBUG: Loading soil properties from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:16:33.793 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:16:33.794 [INFO]  DEBUG: Headers in Soil Properties sheet: ['MaterialName', 'SoilModel', 'DrainageType', 'SPT', 'gammaUnsat', 'gammaSat', 'Eref', 'nu', 'cref', 'phi', 'kx', 'ky', 'Strength', 'Rinter', 'K0Determination', 'K0Primary', 'Colour']
+2025-11-03 20:16:33.795 [INFO]  DEBUG: Loaded properties for material: Fill
+2025-11-03 20:16:33.796 [INFO]  DEBUG: Loaded properties for material: F1
+2025-11-03 20:16:33.797 [INFO]  DEBUG: Loaded properties for material: F2
+2025-11-03 20:16:33.798 [INFO]  DEBUG: Loaded properties for material: OA(E)
+2025-11-03 20:16:33.799 [INFO]  DEBUG: Loaded properties for material: OA(D)
+2025-11-03 20:16:33.800 [INFO]  DEBUG: Loaded properties for material: OA(C)
+2025-11-03 20:16:33.802 [INFO]  DEBUG: Loaded properties for material: OA(B)
+2025-11-03 20:16:33.803 [INFO]  DEBUG: Loaded properties for material: OA(A)
+2025-11-03 20:16:33.804 [INFO]  DEBUG: Loaded properties for material: G(II)
+2025-11-03 20:16:33.805 [INFO]  DEBUG: Loaded properties for material: G(III)
+2025-11-03 20:16:33.806 [INFO]  DEBUG: Loaded properties for material: G(IV)
+2025-11-03 20:16:33.807 [INFO]  DEBUG: Loaded properties for material: G(V)
+2025-11-03 20:16:33.809 [INFO]  DEBUG: Loaded properties for material: G(VI)
+2025-11-03 20:16:33.810 [INFO]  DEBUG: Loaded properties for material: S(II)
+2025-11-03 20:16:33.812 [INFO]  DEBUG: Loaded properties for material: S(III)
+2025-11-03 20:16:33.813 [INFO]  DEBUG: Loaded properties for material: S(IV)
+2025-11-03 20:16:33.814 [INFO]  DEBUG: Loaded properties for material: S(V)
+2025-11-03 20:16:33.816 [INFO]  DEBUG: Loaded properties for material: S(VI)
+2025-11-03 20:16:33.816 [INFO]  DEBUG: Total materials with properties: 18
+2025-11-03 20:16:33.817 [INFO]  DEBUG: Materials will be loaded on demand
+2025-11-03 20:16:33.825 [INFO]  Cleaning up and saving log file...
+
+================================================================================
+Session Ended: 2025-11-03 20:16:33
+================================================================================
+
+================================================================================
+Session Ended: 2025-11-03 20:16:33
+================================================================================
+
+================================================================================
+================================================================================
+
+================================================================================
+GeoCoPilot Application Log - Run #10
+Session Started: 2025-11-03 20:23:45
+Log File: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+================================================================================
+
+2025-11-03 20:23:45.415 [INFO]  Terminal logging started. Log file: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+2025-11-03 20:23:45.417 [INFO]  Starting application...
+2025-11-03 20:23:45.419 [INFO]  Current working directory: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:23:45.421 [INFO]  Script location: g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py
+2025-11-03 20:23:45.422 [INFO]  Frozen: False
+2025-11-03 20:23:45.423 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:23:45.425 [INFO]  Looking for resource: src/config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:23:45.426 [INFO]  Resource exists: True
+2025-11-03 20:23:45.428 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:23:45.429 [INFO]  Looking for resource: config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\config.yaml
+2025-11-03 20:23:45.431 [INFO]  Resource exists: False
+2025-11-03 20:23:45.432 [INFO]  Trying config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:23:45.433 [INFO]  Found config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:23:45.440 [INFO]  Successfully loaded config: {'auth_server': {'host': 'geo-copilot-auth-server.buildnexai.com', 'port': '', 'secret': 'mysecret'}, 'database': {'database': '../data/flet.db'}, 'plaxis': {'password': 'W@%4>RTT4N?Tf@@n', 'plaxis_path': 'C:\\Program Files\\Bentley\\Geotechnical\\PLAXIS 2D CONNECT Edition V20\\Plaxis2DXInput.exe', 'port_i': '10000', 'port_o': '10001'}}
+2025-11-03 20:23:45.442 [INFO]  ======================================================================
+2025-11-03 20:23:45.443 [INFO]  DATABASE PATH RESOLUTION
+2025-11-03 20:23:45.445 [INFO]  ======================================================================
+2025-11-03 20:23:45.446 [INFO]  Config DB path: ../data/flet.db
+2025-11-03 20:23:45.447 [INFO]  Resolved DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:23:45.448 [INFO]  Database exists: True
+2025-11-03 20:23:45.449 [INFO]  ======================================================================
+2025-11-03 20:23:45.450 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:23:45.451 [INFO]  Files in database directory: ['anchor_properties.csv', 'borehole_data.csv', 'circular_steel_properties.xlsx', 'erss_wall_details.csv', 'excavation_stages.csv', 'flet.db', 'geometry.csv', 'geo_design_project.gcp', 'geo_design_project_1.gcp', 'geo_design_project_2.gcp', 'import', 'InputData.xlsx', 'Input_Data.xlsx', 'lineload.csv', 'ModelInfo.xlsx', 'output_data.xlsx', 'project_data.csv', 'Sheet_Pile_Properties.xlsx', 'Soil_DB.xlsx', 'Steel_member_properties.xlsx', 'strut_details.csv', 'terminal_log.txt']
+2025-11-03 20:23:45.452 [INFO]  ======================================================================
+2025-11-03 20:23:45.453 [INFO]  DATABASE LOCATION CHECK
+2025-11-03 20:23:45.454 [INFO]  ======================================================================
+2025-11-03 20:23:45.455 [INFO]  Requested DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:23:45.456 [INFO]  Absolute DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:23:45.457 [INFO]  Database exists: True
+2025-11-03 20:23:45.458 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:23:45.459 [INFO]  ======================================================================
+2025-11-03 20:23:45.871 [INFO]  Existing tables in database: ['project_info', 'sqlite_sequence', 'borehole_data', 'geometry', 'soil_properties', 'userdetails', 'erss_wall_details', 'lineload', 'anchor_properties', 'strutdetails', 'excavationstages', 'sequenceconstruct', 'user_plaxis_config']
+2025-11-03 20:23:45.872 [INFO]  Database ready at: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:23:45.873 [INFO]  Database config loaded successfully: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:23:45.876 [INFO]  Loaded config from YAML file
+2025-11-03 20:23:45.877 [INFO]  Auth server URL: https://geo-copilot-auth-server.buildnexai.com:
+2025-11-03 20:23:45.878 [INFO]  ModelCreator BASE_DIR: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:23:45.882 [INFO]  DEBUG: Loading concrete grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:23:45.883 [INFO]  DEBUG: File exists: False
+2025-11-03 20:23:45.884 [INFO]  ERROR: ConcreteDB.xlsx not found at G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:23:45.885 [INFO]  WARNING: Using default concrete grades
+2025-11-03 20:23:45.886 [INFO]  DEBUG: Loading steel grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\SteelDB.xlsx
+2025-11-03 20:23:45.887 [INFO]  ERROR loading steel grades: [Errno 2] No such file or directory: 'G:\\BuildNex AI\\geo_co_pilot-HasiniNew\\data\\SteelDB.xlsx'
+2025-11-03 20:23:45.888 [INFO]  Resource path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data/Steel_member_properties.xlsx
+2025-11-03 20:23:45.889 [INFO]  File exists: True
+2025-11-03 20:23:45.889 [INFO]  DEBUG: Loading soil properties from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:23:46.023 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:23:46.024 [INFO]  DEBUG: Headers in Soil Properties sheet: ['MaterialName', 'SoilModel', 'DrainageType', 'SPT', 'gammaUnsat', 'gammaSat', 'Eref', 'nu', 'cref', 'phi', 'kx', 'ky', 'Strength', 'Rinter', 'K0Determination', 'K0Primary', 'Colour']
+2025-11-03 20:23:46.025 [INFO]  DEBUG: Loaded properties for material: Fill
+2025-11-03 20:23:46.026 [INFO]  DEBUG: Loaded properties for material: F1
+2025-11-03 20:23:46.027 [INFO]  DEBUG: Loaded properties for material: F2
+2025-11-03 20:23:46.028 [INFO]  DEBUG: Loaded properties for material: OA(E)
+2025-11-03 20:23:46.029 [INFO]  DEBUG: Loaded properties for material: OA(D)
+2025-11-03 20:23:46.030 [INFO]  DEBUG: Loaded properties for material: OA(C)
+2025-11-03 20:23:46.031 [INFO]  DEBUG: Loaded properties for material: OA(B)
+2025-11-03 20:23:46.032 [INFO]  DEBUG: Loaded properties for material: OA(A)
+2025-11-03 20:23:46.033 [INFO]  DEBUG: Loaded properties for material: G(II)
+2025-11-03 20:23:46.034 [INFO]  DEBUG: Loaded properties for material: G(III)
+2025-11-03 20:23:46.035 [INFO]  DEBUG: Loaded properties for material: G(IV)
+2025-11-03 20:23:46.036 [INFO]  DEBUG: Loaded properties for material: G(V)
+2025-11-03 20:23:46.036 [INFO]  DEBUG: Loaded properties for material: G(VI)
+2025-11-03 20:23:46.037 [INFO]  DEBUG: Loaded properties for material: S(II)
+2025-11-03 20:23:46.038 [INFO]  DEBUG: Loaded properties for material: S(III)
+2025-11-03 20:23:46.049 [INFO]  DEBUG: Loaded properties for material: S(IV)
+2025-11-03 20:23:46.069 [INFO]  DEBUG: Loaded properties for material: S(V)
+2025-11-03 20:23:46.082 [INFO]  DEBUG: Loaded properties for material: S(VI)
+2025-11-03 20:23:46.083 [INFO]  DEBUG: Total materials with properties: 18
+2025-11-03 20:23:46.084 [INFO]  DEBUG: Materials will be loaded on demand
+2025-11-03 20:23:46.197 [INFO]  Cleaning up and saving log file...
+
+================================================================================
+Session Ended: 2025-11-03 20:23:46
+================================================================================
+
+================================================================================
+Session Ended: 2025-11-03 20:23:46
+================================================================================
+
+================================================================================
+================================================================================
+
+================================================================================
+GeoCoPilot Application Log - Run #10
+Session Started: 2025-11-03 20:25:15
+Log File: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+================================================================================
+
+2025-11-03 20:25:15.775 [INFO]  Terminal logging started. Log file: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+2025-11-03 20:25:15.776 [INFO]  Starting application...
+2025-11-03 20:25:15.777 [INFO]  Current working directory: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:25:15.778 [INFO]  Script location: g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py
+2025-11-03 20:25:15.779 [INFO]  Frozen: False
+2025-11-03 20:25:15.781 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:25:15.782 [INFO]  Looking for resource: src/config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:25:15.784 [INFO]  Resource exists: True
+2025-11-03 20:25:15.785 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:25:15.786 [INFO]  Looking for resource: config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\config.yaml
+2025-11-03 20:25:15.787 [INFO]  Resource exists: False
+2025-11-03 20:25:15.788 [INFO]  Trying config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:25:15.789 [INFO]  Found config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:25:15.793 [INFO]  Successfully loaded config: {'auth_server': {'host': 'geo-copilot-auth-server.buildnexai.com', 'port': '', 'secret': 'mysecret'}, 'database': {'database': '../data/flet.db'}, 'plaxis': {'password': 'W@%4>RTT4N?Tf@@n', 'plaxis_path': 'C:\\Program Files\\Bentley\\Geotechnical\\PLAXIS 2D CONNECT Edition V20\\Plaxis2DXInput.exe', 'port_i': '10000', 'port_o': '10001'}}
+2025-11-03 20:25:15.794 [INFO]  ======================================================================
+2025-11-03 20:25:15.795 [INFO]  DATABASE PATH RESOLUTION
+2025-11-03 20:25:15.796 [INFO]  ======================================================================
+2025-11-03 20:25:15.797 [INFO]  Config DB path: ../data/flet.db
+2025-11-03 20:25:15.798 [INFO]  Resolved DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:25:15.799 [INFO]  Database exists: True
+2025-11-03 20:25:15.799 [INFO]  ======================================================================
+2025-11-03 20:25:15.801 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:25:15.802 [INFO]  Files in database directory: ['anchor_properties.csv', 'borehole_data.csv', 'circular_steel_properties.xlsx', 'erss_wall_details.csv', 'excavation_stages.csv', 'flet.db', 'geometry.csv', 'geo_design_project.gcp', 'geo_design_project_1.gcp', 'geo_design_project_2.gcp', 'import', 'InputData.xlsx', 'Input_Data.xlsx', 'lineload.csv', 'ModelInfo.xlsx', 'output_data.xlsx', 'project_data.csv', 'Sheet_Pile_Properties.xlsx', 'Soil_DB.xlsx', 'Steel_member_properties.xlsx', 'strut_details.csv', 'terminal_log.txt']
+2025-11-03 20:25:15.803 [INFO]  ======================================================================
+2025-11-03 20:25:15.804 [INFO]  DATABASE LOCATION CHECK
+2025-11-03 20:25:15.805 [INFO]  ======================================================================
+2025-11-03 20:25:15.806 [INFO]  Requested DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:25:15.806 [INFO]  Absolute DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:25:15.807 [INFO]  Database exists: True
+2025-11-03 20:25:15.808 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:25:15.810 [INFO]  ======================================================================
+2025-11-03 20:25:15.813 [INFO]  Existing tables in database: ['project_info', 'sqlite_sequence', 'borehole_data', 'geometry', 'soil_properties', 'userdetails', 'erss_wall_details', 'lineload', 'anchor_properties', 'strutdetails', 'excavationstages', 'sequenceconstruct', 'user_plaxis_config']
+2025-11-03 20:25:15.815 [INFO]  Database ready at: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:25:15.816 [INFO]  Database config loaded successfully: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:25:15.820 [INFO]  Loaded config from YAML file
+2025-11-03 20:25:15.821 [INFO]  Auth server URL: https://geo-copilot-auth-server.buildnexai.com:
+2025-11-03 20:25:15.823 [INFO]  ModelCreator BASE_DIR: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:25:15.827 [INFO]  DEBUG: Loading concrete grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:25:15.828 [INFO]  DEBUG: File exists: False
+2025-11-03 20:25:15.829 [INFO]  ERROR: ConcreteDB.xlsx not found at G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:25:15.830 [INFO]  WARNING: Using default concrete grades
+2025-11-03 20:25:15.831 [INFO]  DEBUG: Loading steel grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\SteelDB.xlsx
+2025-11-03 20:25:15.832 [INFO]  ERROR loading steel grades: [Errno 2] No such file or directory: 'G:\\BuildNex AI\\geo_co_pilot-HasiniNew\\data\\SteelDB.xlsx'
+2025-11-03 20:25:15.833 [INFO]  Resource path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data/Steel_member_properties.xlsx
+2025-11-03 20:25:15.833 [INFO]  File exists: True
+2025-11-03 20:25:15.835 [INFO]  DEBUG: Loading soil properties from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:25:15.871 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:25:15.872 [INFO]  DEBUG: Headers in Soil Properties sheet: ['MaterialName', 'SoilModel', 'DrainageType', 'SPT', 'gammaUnsat', 'gammaSat', 'Eref', 'nu', 'cref', 'phi', 'kx', 'ky', 'Strength', 'Rinter', 'K0Determination', 'K0Primary', 'Colour']
+2025-11-03 20:25:15.873 [INFO]  DEBUG: Loaded properties for material: Fill
+2025-11-03 20:25:15.875 [INFO]  DEBUG: Loaded properties for material: F1
+2025-11-03 20:25:15.876 [INFO]  DEBUG: Loaded properties for material: F2
+2025-11-03 20:25:15.877 [INFO]  DEBUG: Loaded properties for material: OA(E)
+2025-11-03 20:25:15.878 [INFO]  DEBUG: Loaded properties for material: OA(D)
+2025-11-03 20:25:15.879 [INFO]  DEBUG: Loaded properties for material: OA(C)
+2025-11-03 20:25:15.880 [INFO]  DEBUG: Loaded properties for material: OA(B)
+2025-11-03 20:25:15.880 [INFO]  DEBUG: Loaded properties for material: OA(A)
+2025-11-03 20:25:15.881 [INFO]  DEBUG: Loaded properties for material: G(II)
+2025-11-03 20:25:15.882 [INFO]  DEBUG: Loaded properties for material: G(III)
+2025-11-03 20:25:15.883 [INFO]  DEBUG: Loaded properties for material: G(IV)
+2025-11-03 20:25:15.884 [INFO]  DEBUG: Loaded properties for material: G(V)
+2025-11-03 20:25:15.885 [INFO]  DEBUG: Loaded properties for material: G(VI)
+2025-11-03 20:25:15.886 [INFO]  DEBUG: Loaded properties for material: S(II)
+2025-11-03 20:25:15.887 [INFO]  DEBUG: Loaded properties for material: S(III)
+2025-11-03 20:25:15.887 [INFO]  DEBUG: Loaded properties for material: S(IV)
+2025-11-03 20:25:15.888 [INFO]  DEBUG: Loaded properties for material: S(V)
+2025-11-03 20:25:15.889 [INFO]  DEBUG: Loaded properties for material: S(VI)
+2025-11-03 20:25:15.890 [INFO]  DEBUG: Total materials with properties: 18
+2025-11-03 20:25:15.891 [INFO]  DEBUG: Materials will be loaded on demand
+2025-11-03 20:25:15.895 [INFO]  DEBUG: Looking for Excel file at: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:25:15.937 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:25:15.938 [INFO]  DEBUG: Found material: Fill
+2025-11-03 20:25:15.939 [INFO]  DEBUG: Found material: F1
+2025-11-03 20:25:15.940 [INFO]  DEBUG: Found material: F2
+2025-11-03 20:25:15.941 [INFO]  DEBUG: Found material: OA(E)
+2025-11-03 20:25:15.942 [INFO]  DEBUG: Found material: OA(D)
+2025-11-03 20:25:15.943 [INFO]  DEBUG: Found material: OA(C)
+2025-11-03 20:25:15.943 [INFO]  DEBUG: Found material: OA(B)
+2025-11-03 20:25:15.944 [INFO]  DEBUG: Found material: OA(A)
+2025-11-03 20:25:15.945 [INFO]  DEBUG: Found material: G(II)
+2025-11-03 20:25:15.945 [INFO]  DEBUG: Found material: G(III)
+2025-11-03 20:25:15.946 [INFO]  DEBUG: Found material: G(IV)
+2025-11-03 20:25:15.946 [INFO]  DEBUG: Found material: G(V)
+2025-11-03 20:25:15.947 [INFO]  DEBUG: Found material: G(VI)
+2025-11-03 20:25:15.947 [INFO]  DEBUG: Found material: S(II)
+2025-11-03 20:25:15.948 [INFO]  DEBUG: Found material: S(III)
+2025-11-03 20:25:15.949 [INFO]  DEBUG: Found material: S(IV)
+2025-11-03 20:25:15.950 [INFO]  DEBUG: Found material: S(V)
+2025-11-03 20:25:15.951 [INFO]  DEBUG: Found material: S(VI)
+2025-11-03 20:25:15.952 [INFO]  DEBUG: Total materials found: 18
+2025-11-03 20:25:17.372 [INFO]  Unhandled error processing page session :
+2025-11-03 20:25:17.374 [INFO]  Traceback (most recent call last):
+  File "c:\Users\globeitzone.lk\AppData\Local\Programs\Python\Python310\lib\site-packages\flet\app.py", line 247, in on_session_created
+    await asyncio.get_running_loop().run_in_executor(
+  File "c:\Users\globeitzone.lk\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py", line 280, in app_initialize
+    app_instance.initialize(page)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\form_app.py", line 346, in initialize
+    self.sign_in_page = LoginScreen(self.db_config, self.handle_sign_in)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\login_screen.py", line 17, in __init__
+    self.primary_color = ft.colors.BLUE_600
+AttributeError: module 'flet' has no attribute 'colors'
+
+================================================================================
+================================================================================
+
+================================================================================
+GeoCoPilot Application Log - Run #10
+Session Started: 2025-11-03 20:26:29
+Log File: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+================================================================================
+
+2025-11-03 20:26:29.991 [INFO]  Terminal logging started. Log file: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+2025-11-03 20:26:29.992 [INFO]  Starting application...
+2025-11-03 20:26:29.993 [INFO]  Current working directory: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:26:29.994 [INFO]  Script location: g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py
+2025-11-03 20:26:29.995 [INFO]  Frozen: False
+2025-11-03 20:26:29.996 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:26:29.998 [INFO]  Looking for resource: src/config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:26:30.000 [INFO]  Resource exists: True
+2025-11-03 20:26:30.001 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:26:30.002 [INFO]  Looking for resource: config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\config.yaml
+2025-11-03 20:26:30.003 [INFO]  Resource exists: False
+2025-11-03 20:26:30.004 [INFO]  Trying config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:26:30.005 [INFO]  Found config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:26:30.011 [INFO]  Successfully loaded config: {'auth_server': {'host': 'geo-copilot-auth-server.buildnexai.com', 'port': '', 'secret': 'mysecret'}, 'database': {'database': '../data/flet.db'}, 'plaxis': {'password': 'W@%4>RTT4N?Tf@@n', 'plaxis_path': 'C:\\Program Files\\Bentley\\Geotechnical\\PLAXIS 2D CONNECT Edition V20\\Plaxis2DXInput.exe', 'port_i': '10000', 'port_o': '10001'}}
+2025-11-03 20:26:30.013 [INFO]  ======================================================================
+2025-11-03 20:26:30.014 [INFO]  DATABASE PATH RESOLUTION
+2025-11-03 20:26:30.014 [INFO]  ======================================================================
+2025-11-03 20:26:30.015 [INFO]  Config DB path: ../data/flet.db
+2025-11-03 20:26:30.015 [INFO]  Resolved DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:26:30.016 [INFO]  Database exists: True
+2025-11-03 20:26:30.017 [INFO]  ======================================================================
+2025-11-03 20:26:30.018 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:26:30.019 [INFO]  Files in database directory: ['anchor_properties.csv', 'borehole_data.csv', 'circular_steel_properties.xlsx', 'erss_wall_details.csv', 'excavation_stages.csv', 'flet.db', 'geometry.csv', 'geo_design_project.gcp', 'geo_design_project_1.gcp', 'geo_design_project_2.gcp', 'import', 'InputData.xlsx', 'Input_Data.xlsx', 'lineload.csv', 'ModelInfo.xlsx', 'output_data.xlsx', 'project_data.csv', 'Sheet_Pile_Properties.xlsx', 'Soil_DB.xlsx', 'Steel_member_properties.xlsx', 'strut_details.csv', 'terminal_log.txt']
+2025-11-03 20:26:30.020 [INFO]  ======================================================================
+2025-11-03 20:26:30.021 [INFO]  DATABASE LOCATION CHECK
+2025-11-03 20:26:30.021 [INFO]  ======================================================================
+2025-11-03 20:26:30.022 [INFO]  Requested DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:26:30.023 [INFO]  Absolute DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:26:30.024 [INFO]  Database exists: True
+2025-11-03 20:26:30.025 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:26:30.025 [INFO]  ======================================================================
+2025-11-03 20:26:30.029 [INFO]  Existing tables in database: ['project_info', 'sqlite_sequence', 'borehole_data', 'geometry', 'soil_properties', 'userdetails', 'erss_wall_details', 'lineload', 'anchor_properties', 'strutdetails', 'excavationstages', 'sequenceconstruct', 'user_plaxis_config']
+2025-11-03 20:26:30.030 [INFO]  Database ready at: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:26:30.031 [INFO]  Database config loaded successfully: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:26:30.035 [INFO]  Loaded config from YAML file
+2025-11-03 20:26:30.036 [INFO]  Auth server URL: https://geo-copilot-auth-server.buildnexai.com:
+2025-11-03 20:26:30.038 [INFO]  ModelCreator BASE_DIR: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:26:30.043 [INFO]  DEBUG: Loading concrete grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:26:30.044 [INFO]  DEBUG: File exists: False
+2025-11-03 20:26:30.046 [INFO]  ERROR: ConcreteDB.xlsx not found at G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:26:30.047 [INFO]  WARNING: Using default concrete grades
+2025-11-03 20:26:30.049 [INFO]  DEBUG: Loading steel grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\SteelDB.xlsx
+2025-11-03 20:26:30.050 [INFO]  ERROR loading steel grades: [Errno 2] No such file or directory: 'G:\\BuildNex AI\\geo_co_pilot-HasiniNew\\data\\SteelDB.xlsx'
+2025-11-03 20:26:30.050 [INFO]  Resource path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data/Steel_member_properties.xlsx
+2025-11-03 20:26:30.051 [INFO]  File exists: True
+2025-11-03 20:26:30.053 [INFO]  DEBUG: Loading soil properties from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:26:30.085 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:26:30.087 [INFO]  DEBUG: Headers in Soil Properties sheet: ['MaterialName', 'SoilModel', 'DrainageType', 'SPT', 'gammaUnsat', 'gammaSat', 'Eref', 'nu', 'cref', 'phi', 'kx', 'ky', 'Strength', 'Rinter', 'K0Determination', 'K0Primary', 'Colour']
+2025-11-03 20:26:30.088 [INFO]  DEBUG: Loaded properties for material: Fill
+2025-11-03 20:26:30.089 [INFO]  DEBUG: Loaded properties for material: F1
+2025-11-03 20:26:30.090 [INFO]  DEBUG: Loaded properties for material: F2
+2025-11-03 20:26:30.090 [INFO]  DEBUG: Loaded properties for material: OA(E)
+2025-11-03 20:26:30.091 [INFO]  DEBUG: Loaded properties for material: OA(D)
+2025-11-03 20:26:30.092 [INFO]  DEBUG: Loaded properties for material: OA(C)
+2025-11-03 20:26:30.093 [INFO]  DEBUG: Loaded properties for material: OA(B)
+2025-11-03 20:26:30.094 [INFO]  DEBUG: Loaded properties for material: OA(A)
+2025-11-03 20:26:30.096 [INFO]  DEBUG: Loaded properties for material: G(II)
+2025-11-03 20:26:30.096 [INFO]  DEBUG: Loaded properties for material: G(III)
+2025-11-03 20:26:30.097 [INFO]  DEBUG: Loaded properties for material: G(IV)
+2025-11-03 20:26:30.098 [INFO]  DEBUG: Loaded properties for material: G(V)
+2025-11-03 20:26:30.099 [INFO]  DEBUG: Loaded properties for material: G(VI)
+2025-11-03 20:26:30.099 [INFO]  DEBUG: Loaded properties for material: S(II)
+2025-11-03 20:26:30.100 [INFO]  DEBUG: Loaded properties for material: S(III)
+2025-11-03 20:26:30.101 [INFO]  DEBUG: Loaded properties for material: S(IV)
+2025-11-03 20:26:30.102 [INFO]  DEBUG: Loaded properties for material: S(V)
+2025-11-03 20:26:30.103 [INFO]  DEBUG: Loaded properties for material: S(VI)
+2025-11-03 20:26:30.104 [INFO]  DEBUG: Total materials with properties: 18
+2025-11-03 20:26:30.105 [INFO]  DEBUG: Materials will be loaded on demand
+2025-11-03 20:26:30.110 [INFO]  DEBUG: Looking for Excel file at: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:26:30.144 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:26:30.145 [INFO]  DEBUG: Found material: Fill
+2025-11-03 20:26:30.146 [INFO]  DEBUG: Found material: F1
+2025-11-03 20:26:30.146 [INFO]  DEBUG: Found material: F2
+2025-11-03 20:26:30.147 [INFO]  DEBUG: Found material: OA(E)
+2025-11-03 20:26:30.148 [INFO]  DEBUG: Found material: OA(D)
+2025-11-03 20:26:30.148 [INFO]  DEBUG: Found material: OA(C)
+2025-11-03 20:26:30.149 [INFO]  DEBUG: Found material: OA(B)
+2025-11-03 20:26:30.149 [INFO]  DEBUG: Found material: OA(A)
+2025-11-03 20:26:30.150 [INFO]  DEBUG: Found material: G(II)
+2025-11-03 20:26:30.151 [INFO]  DEBUG: Found material: G(III)
+2025-11-03 20:26:30.151 [INFO]  DEBUG: Found material: G(IV)
+2025-11-03 20:26:30.152 [INFO]  DEBUG: Found material: G(V)
+2025-11-03 20:26:30.153 [INFO]  DEBUG: Found material: G(VI)
+2025-11-03 20:26:30.154 [INFO]  DEBUG: Found material: S(II)
+2025-11-03 20:26:30.155 [INFO]  DEBUG: Found material: S(III)
+2025-11-03 20:26:30.156 [INFO]  DEBUG: Found material: S(IV)
+2025-11-03 20:26:30.156 [INFO]  DEBUG: Found material: S(V)
+2025-11-03 20:26:30.157 [INFO]  DEBUG: Found material: S(VI)
+2025-11-03 20:26:30.158 [INFO]  DEBUG: Total materials found: 18
+2025-11-03 20:26:30.474 [INFO]  Unhandled error processing page session :
+2025-11-03 20:26:30.479 [INFO]  Traceback (most recent call last):
+  File "c:\Users\globeitzone.lk\AppData\Local\Programs\Python\Python310\lib\site-packages\flet\app.py", line 247, in on_session_created
+    await asyncio.get_running_loop().run_in_executor(
+  File "c:\Users\globeitzone.lk\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py", line 280, in app_initialize
+    app_instance.initialize(page)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\form_app.py", line 346, in initialize
+    self.sign_in_page = LoginScreen(self.db_config, self.handle_sign_in)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\login_screen.py", line 18, in __init__
+    self.text_color = ft.colors.BLUE_GREY_900
+AttributeError: module 'flet' has no attribute 'colors'
+2025-11-03 20:26:35.365 [INFO]  Application ended normally
+2025-11-03 20:26:35.366 [INFO]  Cleaning up and saving log file...
+
+================================================================================
+Session Ended: 2025-11-03 20:26:35
+================================================================================
+
+================================================================================
+Session Ended: 2025-11-03 20:26:35
+================================================================================
+
+================================================================================
+================================================================================
+
+================================================================================
+GeoCoPilot Application Log - Run #10
+Session Started: 2025-11-03 20:27:08
+Log File: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+================================================================================
+
+2025-11-03 20:27:08.599 [INFO]  Terminal logging started. Log file: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+2025-11-03 20:27:08.599 [INFO]  Starting application...
+2025-11-03 20:27:08.600 [INFO]  Current working directory: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:27:08.601 [INFO]  Script location: g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py
+2025-11-03 20:27:08.602 [INFO]  Frozen: False
+2025-11-03 20:27:08.602 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:27:08.603 [INFO]  Looking for resource: src/config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:27:08.604 [INFO]  Resource exists: True
+2025-11-03 20:27:08.605 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:27:08.605 [INFO]  Looking for resource: config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\config.yaml
+2025-11-03 20:27:08.606 [INFO]  Resource exists: False
+2025-11-03 20:27:08.607 [INFO]  Trying config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:27:08.608 [INFO]  Found config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:27:08.613 [INFO]  Successfully loaded config: {'auth_server': {'host': 'geo-copilot-auth-server.buildnexai.com', 'port': '', 'secret': 'mysecret'}, 'database': {'database': '../data/flet.db'}, 'plaxis': {'password': 'W@%4>RTT4N?Tf@@n', 'plaxis_path': 'C:\\Program Files\\Bentley\\Geotechnical\\PLAXIS 2D CONNECT Edition V20\\Plaxis2DXInput.exe', 'port_i': '10000', 'port_o': '10001'}}
+2025-11-03 20:27:08.614 [INFO]  ======================================================================
+2025-11-03 20:27:08.615 [INFO]  DATABASE PATH RESOLUTION
+2025-11-03 20:27:08.616 [INFO]  ======================================================================
+2025-11-03 20:27:08.616 [INFO]  Config DB path: ../data/flet.db
+2025-11-03 20:27:08.617 [INFO]  Resolved DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:27:08.618 [INFO]  Database exists: True
+2025-11-03 20:27:08.619 [INFO]  ======================================================================
+2025-11-03 20:27:08.620 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:27:08.621 [INFO]  Files in database directory: ['anchor_properties.csv', 'borehole_data.csv', 'circular_steel_properties.xlsx', 'erss_wall_details.csv', 'excavation_stages.csv', 'flet.db', 'geometry.csv', 'geo_design_project.gcp', 'geo_design_project_1.gcp', 'geo_design_project_2.gcp', 'import', 'InputData.xlsx', 'Input_Data.xlsx', 'lineload.csv', 'ModelInfo.xlsx', 'output_data.xlsx', 'project_data.csv', 'Sheet_Pile_Properties.xlsx', 'Soil_DB.xlsx', 'Steel_member_properties.xlsx', 'strut_details.csv', 'terminal_log.txt']
+2025-11-03 20:27:08.622 [INFO]  ======================================================================
+2025-11-03 20:27:08.622 [INFO]  DATABASE LOCATION CHECK
+2025-11-03 20:27:08.623 [INFO]  ======================================================================
+2025-11-03 20:27:08.624 [INFO]  Requested DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:27:08.625 [INFO]  Absolute DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:27:08.626 [INFO]  Database exists: True
+2025-11-03 20:27:08.627 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:27:08.628 [INFO]  ======================================================================
+2025-11-03 20:27:08.631 [INFO]  Existing tables in database: ['project_info', 'sqlite_sequence', 'borehole_data', 'geometry', 'soil_properties', 'userdetails', 'erss_wall_details', 'lineload', 'anchor_properties', 'strutdetails', 'excavationstages', 'sequenceconstruct', 'user_plaxis_config']
+2025-11-03 20:27:08.633 [INFO]  Database ready at: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:27:08.633 [INFO]  Database config loaded successfully: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:27:08.638 [INFO]  Loaded config from YAML file
+2025-11-03 20:27:08.639 [INFO]  Auth server URL: https://geo-copilot-auth-server.buildnexai.com:
+2025-11-03 20:27:08.640 [INFO]  ModelCreator BASE_DIR: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:27:08.644 [INFO]  DEBUG: Loading concrete grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:27:08.645 [INFO]  DEBUG: File exists: False
+2025-11-03 20:27:08.646 [INFO]  ERROR: ConcreteDB.xlsx not found at G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:27:08.646 [INFO]  WARNING: Using default concrete grades
+2025-11-03 20:27:08.648 [INFO]  DEBUG: Loading steel grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\SteelDB.xlsx
+2025-11-03 20:27:08.648 [INFO]  ERROR loading steel grades: [Errno 2] No such file or directory: 'G:\\BuildNex AI\\geo_co_pilot-HasiniNew\\data\\SteelDB.xlsx'
+2025-11-03 20:27:08.649 [INFO]  Resource path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data/Steel_member_properties.xlsx
+2025-11-03 20:27:08.650 [INFO]  File exists: True
+2025-11-03 20:27:08.650 [INFO]  DEBUG: Loading soil properties from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:27:08.681 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:27:08.682 [INFO]  DEBUG: Headers in Soil Properties sheet: ['MaterialName', 'SoilModel', 'DrainageType', 'SPT', 'gammaUnsat', 'gammaSat', 'Eref', 'nu', 'cref', 'phi', 'kx', 'ky', 'Strength', 'Rinter', 'K0Determination', 'K0Primary', 'Colour']
+2025-11-03 20:27:08.683 [INFO]  DEBUG: Loaded properties for material: Fill
+2025-11-03 20:27:08.684 [INFO]  DEBUG: Loaded properties for material: F1
+2025-11-03 20:27:08.685 [INFO]  DEBUG: Loaded properties for material: F2
+2025-11-03 20:27:08.686 [INFO]  DEBUG: Loaded properties for material: OA(E)
+2025-11-03 20:27:08.687 [INFO]  DEBUG: Loaded properties for material: OA(D)
+2025-11-03 20:27:08.688 [INFO]  DEBUG: Loaded properties for material: OA(C)
+2025-11-03 20:27:08.689 [INFO]  DEBUG: Loaded properties for material: OA(B)
+2025-11-03 20:27:08.689 [INFO]  DEBUG: Loaded properties for material: OA(A)
+2025-11-03 20:27:08.690 [INFO]  DEBUG: Loaded properties for material: G(II)
+2025-11-03 20:27:08.691 [INFO]  DEBUG: Loaded properties for material: G(III)
+2025-11-03 20:27:08.693 [INFO]  DEBUG: Loaded properties for material: G(IV)
+2025-11-03 20:27:08.694 [INFO]  DEBUG: Loaded properties for material: G(V)
+2025-11-03 20:27:08.695 [INFO]  DEBUG: Loaded properties for material: G(VI)
+2025-11-03 20:27:08.696 [INFO]  DEBUG: Loaded properties for material: S(II)
+2025-11-03 20:27:08.697 [INFO]  DEBUG: Loaded properties for material: S(III)
+2025-11-03 20:27:08.697 [INFO]  DEBUG: Loaded properties for material: S(IV)
+2025-11-03 20:27:08.698 [INFO]  DEBUG: Loaded properties for material: S(V)
+2025-11-03 20:27:08.698 [INFO]  DEBUG: Loaded properties for material: S(VI)
+2025-11-03 20:27:08.699 [INFO]  DEBUG: Total materials with properties: 18
+2025-11-03 20:27:08.700 [INFO]  DEBUG: Materials will be loaded on demand
+2025-11-03 20:27:08.703 [INFO]  DEBUG: Looking for Excel file at: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:27:08.737 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:27:08.738 [INFO]  DEBUG: Found material: Fill
+2025-11-03 20:27:08.739 [INFO]  DEBUG: Found material: F1
+2025-11-03 20:27:08.740 [INFO]  DEBUG: Found material: F2
+2025-11-03 20:27:08.741 [INFO]  DEBUG: Found material: OA(E)
+2025-11-03 20:27:08.742 [INFO]  DEBUG: Found material: OA(D)
+2025-11-03 20:27:08.743 [INFO]  DEBUG: Found material: OA(C)
+2025-11-03 20:27:08.745 [INFO]  DEBUG: Found material: OA(B)
+2025-11-03 20:27:08.745 [INFO]  DEBUG: Found material: OA(A)
+2025-11-03 20:27:08.746 [INFO]  DEBUG: Found material: G(II)
+2025-11-03 20:27:08.747 [INFO]  DEBUG: Found material: G(III)
+2025-11-03 20:27:08.748 [INFO]  DEBUG: Found material: G(IV)
+2025-11-03 20:27:08.748 [INFO]  DEBUG: Found material: G(V)
+2025-11-03 20:27:08.749 [INFO]  DEBUG: Found material: G(VI)
+2025-11-03 20:27:08.750 [INFO]  DEBUG: Found material: S(II)
+2025-11-03 20:27:08.750 [INFO]  DEBUG: Found material: S(III)
+2025-11-03 20:27:08.751 [INFO]  DEBUG: Found material: S(IV)
+2025-11-03 20:27:08.752 [INFO]  DEBUG: Found material: S(V)
+2025-11-03 20:27:08.753 [INFO]  DEBUG: Found material: S(VI)
+2025-11-03 20:27:08.754 [INFO]  DEBUG: Total materials found: 18
+2025-11-03 20:27:09.470 [INFO]  Unhandled error processing page session :
+2025-11-03 20:27:09.476 [INFO]  Traceback (most recent call last):
+  File "c:\Users\globeitzone.lk\AppData\Local\Programs\Python\Python310\lib\site-packages\flet\app.py", line 247, in on_session_created
+    await asyncio.get_running_loop().run_in_executor(
+  File "c:\Users\globeitzone.lk\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py", line 280, in app_initialize
+    app_instance.initialize(page)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\form_app.py", line 346, in initialize
+    self.sign_in_page = LoginScreen(self.db_config, self.handle_sign_in)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\login_screen.py", line 30, in __init__
+    prefix_icon=ft.icons.PERSON,
+AttributeError: module 'flet' has no attribute 'icons'
+2025-11-03 20:27:21.797 [INFO]  Application ended normally
+2025-11-03 20:27:21.797 [INFO]  Cleaning up and saving log file...
+
+================================================================================
+Session Ended: 2025-11-03 20:27:21
+================================================================================
+
+================================================================================
+Session Ended: 2025-11-03 20:27:21
+================================================================================
+
+================================================================================
+================================================================================
+
+================================================================================
+GeoCoPilot Application Log - Run #10
+Session Started: 2025-11-03 20:28:07
+Log File: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+================================================================================
+
+2025-11-03 20:28:07.180 [INFO]  Terminal logging started. Log file: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+2025-11-03 20:28:07.180 [INFO]  Starting application...
+2025-11-03 20:28:07.181 [INFO]  Current working directory: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:28:07.183 [INFO]  Script location: g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py
+2025-11-03 20:28:07.184 [INFO]  Frozen: False
+2025-11-03 20:28:07.185 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:28:07.187 [INFO]  Looking for resource: src/config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:28:07.188 [INFO]  Resource exists: True
+2025-11-03 20:28:07.189 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:28:07.190 [INFO]  Looking for resource: config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\config.yaml
+2025-11-03 20:28:07.192 [INFO]  Resource exists: False
+2025-11-03 20:28:07.193 [INFO]  Trying config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:28:07.194 [INFO]  Found config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:28:07.199 [INFO]  Successfully loaded config: {'auth_server': {'host': 'geo-copilot-auth-server.buildnexai.com', 'port': '', 'secret': 'mysecret'}, 'database': {'database': '../data/flet.db'}, 'plaxis': {'password': 'W@%4>RTT4N?Tf@@n', 'plaxis_path': 'C:\\Program Files\\Bentley\\Geotechnical\\PLAXIS 2D CONNECT Edition V20\\Plaxis2DXInput.exe', 'port_i': '10000', 'port_o': '10001'}}
+2025-11-03 20:28:07.200 [INFO]  ======================================================================
+2025-11-03 20:28:07.201 [INFO]  DATABASE PATH RESOLUTION
+2025-11-03 20:28:07.203 [INFO]  ======================================================================
+2025-11-03 20:28:07.204 [INFO]  Config DB path: ../data/flet.db
+2025-11-03 20:28:07.205 [INFO]  Resolved DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:28:07.206 [INFO]  Database exists: True
+2025-11-03 20:28:07.208 [INFO]  ======================================================================
+2025-11-03 20:28:07.209 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:28:07.211 [INFO]  Files in database directory: ['anchor_properties.csv', 'borehole_data.csv', 'circular_steel_properties.xlsx', 'erss_wall_details.csv', 'excavation_stages.csv', 'flet.db', 'geometry.csv', 'geo_design_project.gcp', 'geo_design_project_1.gcp', 'geo_design_project_2.gcp', 'import', 'InputData.xlsx', 'Input_Data.xlsx', 'lineload.csv', 'ModelInfo.xlsx', 'output_data.xlsx', 'project_data.csv', 'Sheet_Pile_Properties.xlsx', 'Soil_DB.xlsx', 'Steel_member_properties.xlsx', 'strut_details.csv', 'terminal_log.txt']
+2025-11-03 20:28:07.212 [INFO]  ======================================================================
+2025-11-03 20:28:07.213 [INFO]  DATABASE LOCATION CHECK
+2025-11-03 20:28:07.214 [INFO]  ======================================================================
+2025-11-03 20:28:07.215 [INFO]  Requested DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:28:07.215 [INFO]  Absolute DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:28:07.216 [INFO]  Database exists: True
+2025-11-03 20:28:07.217 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:28:07.218 [INFO]  ======================================================================
+2025-11-03 20:28:07.222 [INFO]  Existing tables in database: ['project_info', 'sqlite_sequence', 'borehole_data', 'geometry', 'soil_properties', 'userdetails', 'erss_wall_details', 'lineload', 'anchor_properties', 'strutdetails', 'excavationstages', 'sequenceconstruct', 'user_plaxis_config']
+2025-11-03 20:28:07.223 [INFO]  Database ready at: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:28:07.224 [INFO]  Database config loaded successfully: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:28:07.230 [INFO]  Loaded config from YAML file
+2025-11-03 20:28:07.231 [INFO]  Auth server URL: https://geo-copilot-auth-server.buildnexai.com:
+2025-11-03 20:28:07.232 [INFO]  ModelCreator BASE_DIR: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:28:07.237 [INFO]  DEBUG: Loading concrete grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:28:07.238 [INFO]  DEBUG: File exists: False
+2025-11-03 20:28:07.239 [INFO]  ERROR: ConcreteDB.xlsx not found at G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:28:07.240 [INFO]  WARNING: Using default concrete grades
+2025-11-03 20:28:07.242 [INFO]  DEBUG: Loading steel grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\SteelDB.xlsx
+2025-11-03 20:28:07.244 [INFO]  ERROR loading steel grades: [Errno 2] No such file or directory: 'G:\\BuildNex AI\\geo_co_pilot-HasiniNew\\data\\SteelDB.xlsx'
+2025-11-03 20:28:07.245 [INFO]  Resource path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data/Steel_member_properties.xlsx
+2025-11-03 20:28:07.246 [INFO]  File exists: True
+2025-11-03 20:28:07.247 [INFO]  DEBUG: Loading soil properties from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:28:07.280 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:28:07.281 [INFO]  DEBUG: Headers in Soil Properties sheet: ['MaterialName', 'SoilModel', 'DrainageType', 'SPT', 'gammaUnsat', 'gammaSat', 'Eref', 'nu', 'cref', 'phi', 'kx', 'ky', 'Strength', 'Rinter', 'K0Determination', 'K0Primary', 'Colour']
+2025-11-03 20:28:07.282 [INFO]  DEBUG: Loaded properties for material: Fill
+2025-11-03 20:28:07.282 [INFO]  DEBUG: Loaded properties for material: F1
+2025-11-03 20:28:07.283 [INFO]  DEBUG: Loaded properties for material: F2
+2025-11-03 20:28:07.284 [INFO]  DEBUG: Loaded properties for material: OA(E)
+2025-11-03 20:28:07.285 [INFO]  DEBUG: Loaded properties for material: OA(D)
+2025-11-03 20:28:07.286 [INFO]  DEBUG: Loaded properties for material: OA(C)
+2025-11-03 20:28:07.287 [INFO]  DEBUG: Loaded properties for material: OA(B)
+2025-11-03 20:28:07.288 [INFO]  DEBUG: Loaded properties for material: OA(A)
+2025-11-03 20:28:07.288 [INFO]  DEBUG: Loaded properties for material: G(II)
+2025-11-03 20:28:07.289 [INFO]  DEBUG: Loaded properties for material: G(III)
+2025-11-03 20:28:07.290 [INFO]  DEBUG: Loaded properties for material: G(IV)
+2025-11-03 20:28:07.291 [INFO]  DEBUG: Loaded properties for material: G(V)
+2025-11-03 20:28:07.293 [INFO]  DEBUG: Loaded properties for material: G(VI)
+2025-11-03 20:28:07.294 [INFO]  DEBUG: Loaded properties for material: S(II)
+2025-11-03 20:28:07.295 [INFO]  DEBUG: Loaded properties for material: S(III)
+2025-11-03 20:28:07.295 [INFO]  DEBUG: Loaded properties for material: S(IV)
+2025-11-03 20:28:07.296 [INFO]  DEBUG: Loaded properties for material: S(V)
+2025-11-03 20:28:07.297 [INFO]  DEBUG: Loaded properties for material: S(VI)
+2025-11-03 20:28:07.298 [INFO]  DEBUG: Total materials with properties: 18
+2025-11-03 20:28:07.298 [INFO]  DEBUG: Materials will be loaded on demand
+2025-11-03 20:28:07.303 [INFO]  DEBUG: Looking for Excel file at: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:28:07.343 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:28:07.344 [INFO]  DEBUG: Found material: Fill
+2025-11-03 20:28:07.344 [INFO]  DEBUG: Found material: F1
+2025-11-03 20:28:07.345 [INFO]  DEBUG: Found material: F2
+2025-11-03 20:28:07.346 [INFO]  DEBUG: Found material: OA(E)
+2025-11-03 20:28:07.346 [INFO]  DEBUG: Found material: OA(D)
+2025-11-03 20:28:07.347 [INFO]  DEBUG: Found material: OA(C)
+2025-11-03 20:28:07.348 [INFO]  DEBUG: Found material: OA(B)
+2025-11-03 20:28:07.348 [INFO]  DEBUG: Found material: OA(A)
+2025-11-03 20:28:07.349 [INFO]  DEBUG: Found material: G(II)
+2025-11-03 20:28:07.350 [INFO]  DEBUG: Found material: G(III)
+2025-11-03 20:28:07.351 [INFO]  DEBUG: Found material: G(IV)
+2025-11-03 20:28:07.352 [INFO]  DEBUG: Found material: G(V)
+2025-11-03 20:28:07.353 [INFO]  DEBUG: Found material: G(VI)
+2025-11-03 20:28:07.354 [INFO]  DEBUG: Found material: S(II)
+2025-11-03 20:28:07.355 [INFO]  DEBUG: Found material: S(III)
+2025-11-03 20:28:07.355 [INFO]  DEBUG: Found material: S(IV)
+2025-11-03 20:28:07.356 [INFO]  DEBUG: Found material: S(V)
+2025-11-03 20:28:07.357 [INFO]  DEBUG: Found material: S(VI)
+2025-11-03 20:28:07.358 [INFO]  DEBUG: Total materials found: 18
+2025-11-03 20:28:07.749 [INFO]  Unhandled error processing page session :
+2025-11-03 20:28:07.755 [INFO]  Traceback (most recent call last):
+  File "c:\Users\globeitzone.lk\AppData\Local\Programs\Python\Python310\lib\site-packages\flet\app.py", line 247, in on_session_created
+    await asyncio.get_running_loop().run_in_executor(
+  File "c:\Users\globeitzone.lk\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py", line 280, in app_initialize
+    app_instance.initialize(page)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\form_app.py", line 346, in initialize
+    self.sign_in_page = LoginScreen(self.db_config, self.handle_sign_in)
+  File "g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\login_screen.py", line 43, in __init__
+    prefix_icon=ft.icons.LOCK_OUTLINE,
+AttributeError: module 'flet' has no attribute 'icons'
+2025-11-03 20:28:14.407 [INFO]  Application ended normally
+2025-11-03 20:28:14.407 [INFO]  Cleaning up and saving log file...
+
+================================================================================
+Session Ended: 2025-11-03 20:28:14
+================================================================================
+
+================================================================================
+Session Ended: 2025-11-03 20:28:14
+================================================================================
+
+================================================================================
+================================================================================
+
+================================================================================
+GeoCoPilot Application Log - Run #10
+Session Started: 2025-11-03 20:30:47
+Log File: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+================================================================================
+
+2025-11-03 20:30:47.893 [INFO]  Terminal logging started. Log file: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+2025-11-03 20:30:47.895 [INFO]  Starting application...
+2025-11-03 20:30:47.896 [INFO]  Current working directory: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:30:47.897 [INFO]  Script location: g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py
+2025-11-03 20:30:47.898 [INFO]  Frozen: False
+2025-11-03 20:30:47.899 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:30:47.900 [INFO]  Looking for resource: src/config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:30:47.901 [INFO]  Resource exists: True
+2025-11-03 20:30:47.902 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:30:47.903 [INFO]  Looking for resource: config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\config.yaml
+2025-11-03 20:30:47.904 [INFO]  Resource exists: False
+2025-11-03 20:30:47.904 [INFO]  Trying config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:30:47.905 [INFO]  Found config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:30:47.909 [INFO]  Successfully loaded config: {'auth_server': {'host': 'geo-copilot-auth-server.buildnexai.com', 'port': '', 'secret': 'mysecret'}, 'database': {'database': '../data/flet.db'}, 'plaxis': {'password': 'W@%4>RTT4N?Tf@@n', 'plaxis_path': 'C:\\Program Files\\Bentley\\Geotechnical\\PLAXIS 2D CONNECT Edition V20\\Plaxis2DXInput.exe', 'port_i': '10000', 'port_o': '10001'}}
+2025-11-03 20:30:47.911 [INFO]  ======================================================================
+2025-11-03 20:30:47.912 [INFO]  DATABASE PATH RESOLUTION
+2025-11-03 20:30:47.913 [INFO]  ======================================================================
+2025-11-03 20:30:47.915 [INFO]  Config DB path: ../data/flet.db
+2025-11-03 20:30:47.915 [INFO]  Resolved DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:30:47.916 [INFO]  Database exists: True
+2025-11-03 20:30:47.917 [INFO]  ======================================================================
+2025-11-03 20:30:47.918 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:30:47.919 [INFO]  Files in database directory: ['anchor_properties.csv', 'borehole_data.csv', 'circular_steel_properties.xlsx', 'erss_wall_details.csv', 'excavation_stages.csv', 'flet.db', 'geometry.csv', 'geo_design_project.gcp', 'geo_design_project_1.gcp', 'geo_design_project_2.gcp', 'import', 'InputData.xlsx', 'Input_Data.xlsx', 'lineload.csv', 'ModelInfo.xlsx', 'output_data.xlsx', 'project_data.csv', 'Sheet_Pile_Properties.xlsx', 'Soil_DB.xlsx', 'Steel_member_properties.xlsx', 'strut_details.csv', 'terminal_log.txt']
+2025-11-03 20:30:47.920 [INFO]  ======================================================================
+2025-11-03 20:30:47.921 [INFO]  DATABASE LOCATION CHECK
+2025-11-03 20:30:47.922 [INFO]  ======================================================================
+2025-11-03 20:30:47.923 [INFO]  Requested DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:30:47.923 [INFO]  Absolute DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:30:47.924 [INFO]  Database exists: True
+2025-11-03 20:30:47.924 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:30:47.925 [INFO]  ======================================================================
+2025-11-03 20:30:47.985 [INFO]  Existing tables in database: ['project_info', 'sqlite_sequence', 'borehole_data', 'geometry', 'soil_properties', 'userdetails', 'erss_wall_details', 'lineload', 'anchor_properties', 'strutdetails', 'excavationstages', 'sequenceconstruct', 'user_plaxis_config']
+2025-11-03 20:30:47.986 [INFO]  Database ready at: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:30:47.987 [INFO]  Database config loaded successfully: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:30:47.991 [INFO]  Loaded config from YAML file
+2025-11-03 20:30:47.992 [INFO]  Auth server URL: https://geo-copilot-auth-server.buildnexai.com:
+2025-11-03 20:30:47.993 [INFO]  ModelCreator BASE_DIR: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:30:47.998 [INFO]  DEBUG: Loading concrete grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:30:47.999 [INFO]  DEBUG: File exists: False
+2025-11-03 20:30:48.000 [INFO]  ERROR: ConcreteDB.xlsx not found at G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:30:48.001 [INFO]  WARNING: Using default concrete grades
+2025-11-03 20:30:48.002 [INFO]  DEBUG: Loading steel grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\SteelDB.xlsx
+2025-11-03 20:30:48.003 [INFO]  ERROR loading steel grades: [Errno 2] No such file or directory: 'G:\\BuildNex AI\\geo_co_pilot-HasiniNew\\data\\SteelDB.xlsx'
+2025-11-03 20:30:48.004 [INFO]  Resource path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data/Steel_member_properties.xlsx
+2025-11-03 20:30:48.004 [INFO]  File exists: True
+2025-11-03 20:30:48.006 [INFO]  DEBUG: Loading soil properties from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:30:48.071 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:30:48.071 [INFO]  DEBUG: Headers in Soil Properties sheet: ['MaterialName', 'SoilModel', 'DrainageType', 'SPT', 'gammaUnsat', 'gammaSat', 'Eref', 'nu', 'cref', 'phi', 'kx', 'ky', 'Strength', 'Rinter', 'K0Determination', 'K0Primary', 'Colour']
+2025-11-03 20:30:48.072 [INFO]  DEBUG: Loaded properties for material: Fill
+2025-11-03 20:30:48.073 [INFO]  DEBUG: Loaded properties for material: F1
+2025-11-03 20:30:48.073 [INFO]  DEBUG: Loaded properties for material: F2
+2025-11-03 20:30:48.074 [INFO]  DEBUG: Loaded properties for material: OA(E)
+2025-11-03 20:30:48.075 [INFO]  DEBUG: Loaded properties for material: OA(D)
+2025-11-03 20:30:48.075 [INFO]  DEBUG: Loaded properties for material: OA(C)
+2025-11-03 20:30:48.076 [INFO]  DEBUG: Loaded properties for material: OA(B)
+2025-11-03 20:30:48.077 [INFO]  DEBUG: Loaded properties for material: OA(A)
+2025-11-03 20:30:48.078 [INFO]  DEBUG: Loaded properties for material: G(II)
+2025-11-03 20:30:48.079 [INFO]  DEBUG: Loaded properties for material: G(III)
+2025-11-03 20:30:48.080 [INFO]  DEBUG: Loaded properties for material: G(IV)
+2025-11-03 20:30:48.081 [INFO]  DEBUG: Loaded properties for material: G(V)
+2025-11-03 20:30:48.081 [INFO]  DEBUG: Loaded properties for material: G(VI)
+2025-11-03 20:30:48.082 [INFO]  DEBUG: Loaded properties for material: S(II)
+2025-11-03 20:30:48.084 [INFO]  DEBUG: Loaded properties for material: S(III)
+2025-11-03 20:30:48.085 [INFO]  DEBUG: Loaded properties for material: S(IV)
+2025-11-03 20:30:48.085 [INFO]  DEBUG: Loaded properties for material: S(V)
+2025-11-03 20:30:48.086 [INFO]  DEBUG: Loaded properties for material: S(VI)
+2025-11-03 20:30:48.087 [INFO]  DEBUG: Total materials with properties: 18
+2025-11-03 20:30:48.087 [INFO]  DEBUG: Materials will be loaded on demand
+2025-11-03 20:30:48.091 [INFO]  DEBUG: Looking for Excel file at: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:30:48.124 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:30:48.125 [INFO]  DEBUG: Found material: Fill
+2025-11-03 20:30:48.126 [INFO]  DEBUG: Found material: F1
+2025-11-03 20:30:48.127 [INFO]  DEBUG: Found material: F2
+2025-11-03 20:30:48.128 [INFO]  DEBUG: Found material: OA(E)
+2025-11-03 20:30:48.129 [INFO]  DEBUG: Found material: OA(D)
+2025-11-03 20:30:48.130 [INFO]  DEBUG: Found material: OA(C)
+2025-11-03 20:30:48.131 [INFO]  DEBUG: Found material: OA(B)
+2025-11-03 20:30:48.131 [INFO]  DEBUG: Found material: OA(A)
+2025-11-03 20:30:48.132 [INFO]  DEBUG: Found material: G(II)
+2025-11-03 20:30:48.133 [INFO]  DEBUG: Found material: G(III)
+2025-11-03 20:30:48.134 [INFO]  DEBUG: Found material: G(IV)
+2025-11-03 20:30:48.134 [INFO]  DEBUG: Found material: G(V)
+2025-11-03 20:30:48.135 [INFO]  DEBUG: Found material: G(VI)
+2025-11-03 20:30:48.136 [INFO]  DEBUG: Found material: S(II)
+2025-11-03 20:30:48.137 [INFO]  DEBUG: Found material: S(III)
+2025-11-03 20:30:48.138 [INFO]  DEBUG: Found material: S(IV)
+2025-11-03 20:30:48.138 [INFO]  DEBUG: Found material: S(V)
+2025-11-03 20:30:48.139 [INFO]  DEBUG: Found material: S(VI)
+2025-11-03 20:30:48.139 [INFO]  DEBUG: Total materials found: 18
+2025-11-03 20:46:00.685 [INFO]  Application ended normally
+2025-11-03 20:46:00.695 [INFO]  Cleaning up and saving log file...
+
+================================================================================
+Session Ended: 2025-11-03 20:46:00
+================================================================================
+
+================================================================================
+Session Ended: 2025-11-03 20:46:00
+================================================================================
+
+================================================================================
+================================================================================
+
+================================================================================
+GeoCoPilot Application Log - Run #10
+Session Started: 2025-11-03 20:46:17
+Log File: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+================================================================================
+
+2025-11-03 20:46:17.148 [INFO]  Terminal logging started. Log file: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+2025-11-03 20:46:17.149 [INFO]  Starting application...
+2025-11-03 20:46:17.150 [INFO]  Current working directory: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:46:17.151 [INFO]  Script location: g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py
+2025-11-03 20:46:17.151 [INFO]  Frozen: False
+2025-11-03 20:46:17.152 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:46:17.153 [INFO]  Looking for resource: src/config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:46:17.154 [INFO]  Resource exists: True
+2025-11-03 20:46:17.155 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:46:17.157 [INFO]  Looking for resource: config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\config.yaml
+2025-11-03 20:46:17.158 [INFO]  Resource exists: False
+2025-11-03 20:46:17.158 [INFO]  Trying config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:46:17.159 [INFO]  Found config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-03 20:46:17.164 [INFO]  Successfully loaded config: {'auth_server': {'host': 'geo-copilot-auth-server.buildnexai.com', 'port': '', 'secret': 'mysecret'}, 'database': {'database': '../data/flet.db'}, 'plaxis': {'password': 'W@%4>RTT4N?Tf@@n', 'plaxis_path': 'C:\\Program Files\\Bentley\\Geotechnical\\PLAXIS 2D CONNECT Edition V20\\Plaxis2DXInput.exe', 'port_i': '10000', 'port_o': '10001'}}
+2025-11-03 20:46:17.165 [INFO]  ======================================================================
+2025-11-03 20:46:17.166 [INFO]  DATABASE PATH RESOLUTION
+2025-11-03 20:46:17.167 [INFO]  ======================================================================
+2025-11-03 20:46:17.168 [INFO]  Config DB path: ../data/flet.db
+2025-11-03 20:46:17.169 [INFO]  Resolved DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:46:17.170 [INFO]  Database exists: True
+2025-11-03 20:46:17.171 [INFO]  ======================================================================
+2025-11-03 20:46:17.172 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:46:17.174 [INFO]  Files in database directory: ['anchor_properties.csv', 'borehole_data.csv', 'circular_steel_properties.xlsx', 'erss_wall_details.csv', 'excavation_stages.csv', 'flet.db', 'geometry.csv', 'geo_design_project.gcp', 'geo_design_project_1.gcp', 'geo_design_project_2.gcp', 'import', 'InputData.xlsx', 'Input_Data.xlsx', 'lineload.csv', 'ModelInfo.xlsx', 'output_data.xlsx', 'project_data.csv', 'Sheet_Pile_Properties.xlsx', 'Soil_DB.xlsx', 'Steel_member_properties.xlsx', 'strut_details.csv', 'terminal_log.txt']
+2025-11-03 20:46:17.175 [INFO]  ======================================================================
+2025-11-03 20:46:17.175 [INFO]  DATABASE LOCATION CHECK
+2025-11-03 20:46:17.176 [INFO]  ======================================================================
+2025-11-03 20:46:17.177 [INFO]  Requested DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:46:17.178 [INFO]  Absolute DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:46:17.179 [INFO]  Database exists: True
+2025-11-03 20:46:17.180 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-03 20:46:17.180 [INFO]  ======================================================================
+2025-11-03 20:46:17.213 [INFO]  Existing tables in database: ['project_info', 'sqlite_sequence', 'borehole_data', 'geometry', 'soil_properties', 'userdetails', 'erss_wall_details', 'lineload', 'anchor_properties', 'strutdetails', 'excavationstages', 'sequenceconstruct', 'user_plaxis_config']
+2025-11-03 20:46:17.215 [INFO]  Database ready at: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:46:17.216 [INFO]  Database config loaded successfully: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-03 20:46:17.221 [INFO]  Loaded config from YAML file
+2025-11-03 20:46:17.221 [INFO]  Auth server URL: https://geo-copilot-auth-server.buildnexai.com:
+2025-11-03 20:46:17.223 [INFO]  ModelCreator BASE_DIR: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-03 20:46:17.226 [INFO]  DEBUG: Loading concrete grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:46:17.227 [INFO]  DEBUG: File exists: False
+2025-11-03 20:46:17.228 [INFO]  ERROR: ConcreteDB.xlsx not found at G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-03 20:46:17.228 [INFO]  WARNING: Using default concrete grades
+2025-11-03 20:46:17.228 [INFO]  DEBUG: Loading steel grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\SteelDB.xlsx
+2025-11-03 20:46:17.230 [INFO]  ERROR loading steel grades: [Errno 2] No such file or directory: 'G:\\BuildNex AI\\geo_co_pilot-HasiniNew\\data\\SteelDB.xlsx'
+2025-11-03 20:46:17.231 [INFO]  Resource path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data/Steel_member_properties.xlsx
+2025-11-03 20:46:17.232 [INFO]  File exists: True
+2025-11-03 20:46:17.235 [INFO]  DEBUG: Loading soil properties from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:46:17.313 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:46:17.314 [INFO]  DEBUG: Headers in Soil Properties sheet: ['MaterialName', 'SoilModel', 'DrainageType', 'SPT', 'gammaUnsat', 'gammaSat', 'Eref', 'nu', 'cref', 'phi', 'kx', 'ky', 'Strength', 'Rinter', 'K0Determination', 'K0Primary', 'Colour']
+2025-11-03 20:46:17.315 [INFO]  DEBUG: Loaded properties for material: Fill
+2025-11-03 20:46:17.316 [INFO]  DEBUG: Loaded properties for material: F1
+2025-11-03 20:46:17.317 [INFO]  DEBUG: Loaded properties for material: F2
+2025-11-03 20:46:17.318 [INFO]  DEBUG: Loaded properties for material: OA(E)
+2025-11-03 20:46:17.319 [INFO]  DEBUG: Loaded properties for material: OA(D)
+2025-11-03 20:46:17.320 [INFO]  DEBUG: Loaded properties for material: OA(C)
+2025-11-03 20:46:17.321 [INFO]  DEBUG: Loaded properties for material: OA(B)
+2025-11-03 20:46:17.321 [INFO]  DEBUG: Loaded properties for material: OA(A)
+2025-11-03 20:46:17.322 [INFO]  DEBUG: Loaded properties for material: G(II)
+2025-11-03 20:46:17.323 [INFO]  DEBUG: Loaded properties for material: G(III)
+2025-11-03 20:46:17.324 [INFO]  DEBUG: Loaded properties for material: G(IV)
+2025-11-03 20:46:17.325 [INFO]  DEBUG: Loaded properties for material: G(V)
+2025-11-03 20:46:17.325 [INFO]  DEBUG: Loaded properties for material: G(VI)
+2025-11-03 20:46:17.326 [INFO]  DEBUG: Loaded properties for material: S(II)
+2025-11-03 20:46:17.328 [INFO]  DEBUG: Loaded properties for material: S(III)
+2025-11-03 20:46:17.329 [INFO]  DEBUG: Loaded properties for material: S(IV)
+2025-11-03 20:46:17.332 [INFO]  DEBUG: Loaded properties for material: S(V)
+2025-11-03 20:46:17.333 [INFO]  DEBUG: Loaded properties for material: S(VI)
+2025-11-03 20:46:17.334 [INFO]  DEBUG: Total materials with properties: 18
+2025-11-03 20:46:17.335 [INFO]  DEBUG: Materials will be loaded on demand
+2025-11-03 20:46:17.339 [INFO]  DEBUG: Looking for Excel file at: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-03 20:46:17.372 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-03 20:46:17.373 [INFO]  DEBUG: Found material: Fill
+2025-11-03 20:46:17.374 [INFO]  DEBUG: Found material: F1
+2025-11-03 20:46:17.374 [INFO]  DEBUG: Found material: F2
+2025-11-03 20:46:17.375 [INFO]  DEBUG: Found material: OA(E)
+2025-11-03 20:46:17.376 [INFO]  DEBUG: Found material: OA(D)
+2025-11-03 20:46:17.376 [INFO]  DEBUG: Found material: OA(C)
+2025-11-03 20:46:17.377 [INFO]  DEBUG: Found material: OA(B)
+2025-11-03 20:46:17.378 [INFO]  DEBUG: Found material: OA(A)
+2025-11-03 20:46:17.379 [INFO]  DEBUG: Found material: G(II)
+2025-11-03 20:46:17.379 [INFO]  DEBUG: Found material: G(III)
+2025-11-03 20:46:17.380 [INFO]  DEBUG: Found material: G(IV)
+2025-11-03 20:46:17.380 [INFO]  DEBUG: Found material: G(V)
+2025-11-03 20:46:17.381 [INFO]  DEBUG: Found material: G(VI)
+2025-11-03 20:46:17.382 [INFO]  DEBUG: Found material: S(II)
+2025-11-03 20:46:17.383 [INFO]  DEBUG: Found material: S(III)
+2025-11-03 20:46:17.384 [INFO]  DEBUG: Found material: S(IV)
+2025-11-03 20:46:17.385 [INFO]  DEBUG: Found material: S(V)
+2025-11-03 20:46:17.385 [INFO]  DEBUG: Found material: S(VI)
+2025-11-03 20:46:17.386 [INFO]  DEBUG: Total materials found: 18
+2025-11-03 21:05:54.811 [INFO]  Application ended normally
+2025-11-03 21:05:54.823 [INFO]  Cleaning up and saving log file...
+
+================================================================================
+Session Ended: 2025-11-03 21:05:54
+================================================================================
+
+================================================================================
+Session Ended: 2025-11-03 21:05:54
+================================================================================
+
+================================================================================
+================================================================================
+
+================================================================================
+GeoCoPilot Application Log - Run #10
+Session Started: 2025-11-04 09:11:54
+Log File: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+================================================================================
+
+2025-11-04 09:11:54.909 [INFO]  Terminal logging started. Log file: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\terminal_log.txt
+2025-11-04 09:11:54.910 [INFO]  Starting application...
+2025-11-04 09:11:54.911 [INFO]  Current working directory: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-04 09:11:54.911 [INFO]  Script location: g:\BuildNex AI\geo_co_pilot-HasiniNew\src\frontend\main_page.py
+2025-11-04 09:11:54.913 [INFO]  Frozen: False
+2025-11-04 09:11:54.914 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-04 09:11:54.915 [INFO]  Looking for resource: src/config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-04 09:11:54.917 [INFO]  Resource exists: True
+2025-11-04 09:11:54.917 [INFO]  Using base path from development environment: g:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-04 09:11:54.918 [INFO]  Looking for resource: config.yaml -> g:\BuildNex AI\geo_co_pilot-HasiniNew\config.yaml
+2025-11-04 09:11:54.919 [INFO]  Resource exists: False
+2025-11-04 09:11:54.920 [INFO]  Trying config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-04 09:11:54.920 [INFO]  Found config file at: g:\BuildNex AI\geo_co_pilot-HasiniNew\src/config.yaml
+2025-11-04 09:11:54.927 [INFO]  Successfully loaded config: {'auth_server': {'host': 'geo-copilot-auth-server.buildnexai.com', 'port': '', 'secret': 'mysecret'}, 'database': {'database': '../data/flet.db'}, 'plaxis': {'password': 'W@%4>RTT4N?Tf@@n', 'plaxis_path': 'C:\\Program Files\\Bentley\\Geotechnical\\PLAXIS 2D CONNECT Edition V20\\Plaxis2DXInput.exe', 'port_i': '10000', 'port_o': '10001'}}
+2025-11-04 09:11:54.928 [INFO]  ======================================================================
+2025-11-04 09:11:54.929 [INFO]  DATABASE PATH RESOLUTION
+2025-11-04 09:11:54.929 [INFO]  ======================================================================
+2025-11-04 09:11:54.930 [INFO]  Config DB path: ../data/flet.db
+2025-11-04 09:11:54.931 [INFO]  Resolved DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-04 09:11:54.932 [INFO]  Database exists: True
+2025-11-04 09:11:54.933 [INFO]  ======================================================================
+2025-11-04 09:11:54.934 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-04 09:11:54.935 [INFO]  Files in database directory: ['anchor_properties.csv', 'borehole_data.csv', 'circular_steel_properties.xlsx', 'erss_wall_details.csv', 'excavation_stages.csv', 'flet.db', 'geometry.csv', 'geo_design_project.gcp', 'geo_design_project_1.gcp', 'geo_design_project_2.gcp', 'import', 'InputData.xlsx', 'Input_Data.xlsx', 'lineload.csv', 'ModelInfo.xlsx', 'output_data.xlsx', 'project_data.csv', 'Sheet_Pile_Properties.xlsx', 'Soil_DB.xlsx', 'Steel_member_properties.xlsx', 'strut_details.csv', 'terminal_log.txt']
+2025-11-04 09:11:54.936 [INFO]  ======================================================================
+2025-11-04 09:11:54.937 [INFO]  DATABASE LOCATION CHECK
+2025-11-04 09:11:54.938 [INFO]  ======================================================================
+2025-11-04 09:11:54.939 [INFO]  Requested DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-04 09:11:54.940 [INFO]  Absolute DB path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-04 09:11:54.941 [INFO]  Database exists: True
+2025-11-04 09:11:54.942 [INFO]  Database directory exists: g:\BuildNex AI\geo_co_pilot-HasiniNew\data
+2025-11-04 09:11:54.942 [INFO]  ======================================================================
+2025-11-04 09:11:54.960 [INFO]  Existing tables in database: ['project_info', 'sqlite_sequence', 'borehole_data', 'geometry', 'soil_properties', 'userdetails', 'erss_wall_details', 'lineload', 'anchor_properties', 'strutdetails', 'excavationstages', 'sequenceconstruct', 'user_plaxis_config']
+2025-11-04 09:11:54.962 [INFO]  Database ready at: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-04 09:11:54.963 [INFO]  Database config loaded successfully: g:\BuildNex AI\geo_co_pilot-HasiniNew\data\flet.db
+2025-11-04 09:11:54.969 [INFO]  Loaded config from YAML file
+2025-11-04 09:11:54.970 [INFO]  Auth server URL: https://geo-copilot-auth-server.buildnexai.com:
+2025-11-04 09:11:54.972 [INFO]  ModelCreator BASE_DIR: G:\BuildNex AI\geo_co_pilot-HasiniNew
+2025-11-04 09:11:54.976 [INFO]  DEBUG: Loading concrete grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-04 09:11:54.977 [INFO]  DEBUG: File exists: False
+2025-11-04 09:11:54.979 [INFO]  ERROR: ConcreteDB.xlsx not found at G:\BuildNex AI\geo_co_pilot-HasiniNew\data\ConcreteDB.xlsx
+2025-11-04 09:11:54.980 [INFO]  WARNING: Using default concrete grades
+2025-11-04 09:11:54.981 [INFO]  DEBUG: Loading steel grades from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\SteelDB.xlsx
+2025-11-04 09:11:54.982 [INFO]  ERROR loading steel grades: [Errno 2] No such file or directory: 'G:\\BuildNex AI\\geo_co_pilot-HasiniNew\\data\\SteelDB.xlsx'
+2025-11-04 09:11:54.983 [INFO]  Resource path: g:\BuildNex AI\geo_co_pilot-HasiniNew\data/Steel_member_properties.xlsx
+2025-11-04 09:11:54.984 [INFO]  File exists: True
+2025-11-04 09:11:54.986 [INFO]  DEBUG: Loading soil properties from: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-04 09:11:55.039 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-04 09:11:55.041 [INFO]  DEBUG: Headers in Soil Properties sheet: ['MaterialName', 'SoilModel', 'DrainageType', 'SPT', 'gammaUnsat', 'gammaSat', 'Eref', 'nu', 'cref', 'phi', 'kx', 'ky', 'Strength', 'Rinter', 'K0Determination', 'K0Primary', 'Colour']
+2025-11-04 09:11:55.042 [INFO]  DEBUG: Loaded properties for material: Fill
+2025-11-04 09:11:55.042 [INFO]  DEBUG: Loaded properties for material: F1
+2025-11-04 09:11:55.043 [INFO]  DEBUG: Loaded properties for material: F2
+2025-11-04 09:11:55.044 [INFO]  DEBUG: Loaded properties for material: OA(E)
+2025-11-04 09:11:55.045 [INFO]  DEBUG: Loaded properties for material: OA(D)
+2025-11-04 09:11:55.045 [INFO]  DEBUG: Loaded properties for material: OA(C)
+2025-11-04 09:11:55.046 [INFO]  DEBUG: Loaded properties for material: OA(B)
+2025-11-04 09:11:55.047 [INFO]  DEBUG: Loaded properties for material: OA(A)
+2025-11-04 09:11:55.048 [INFO]  DEBUG: Loaded properties for material: G(II)
+2025-11-04 09:11:55.048 [INFO]  DEBUG: Loaded properties for material: G(III)
+2025-11-04 09:11:55.049 [INFO]  DEBUG: Loaded properties for material: G(IV)
+2025-11-04 09:11:55.050 [INFO]  DEBUG: Loaded properties for material: G(V)
+2025-11-04 09:11:55.051 [INFO]  DEBUG: Loaded properties for material: G(VI)
+2025-11-04 09:11:55.052 [INFO]  DEBUG: Loaded properties for material: S(II)
+2025-11-04 09:11:55.053 [INFO]  DEBUG: Loaded properties for material: S(III)
+2025-11-04 09:11:55.054 [INFO]  DEBUG: Loaded properties for material: S(IV)
+2025-11-04 09:11:55.055 [INFO]  DEBUG: Loaded properties for material: S(V)
+2025-11-04 09:11:55.055 [INFO]  DEBUG: Loaded properties for material: S(VI)
+2025-11-04 09:11:55.056 [INFO]  DEBUG: Total materials with properties: 18
+2025-11-04 09:11:55.057 [INFO]  DEBUG: Materials will be loaded on demand
+2025-11-04 09:11:55.061 [INFO]  DEBUG: Looking for Excel file at: G:\BuildNex AI\geo_co_pilot-HasiniNew\data\Input_Data.xlsx
+2025-11-04 09:11:55.092 [INFO]  DEBUG: Available sheets in workbook: ['Soil Properties', 'Project Info', 'Geometry Info', 'ERSS Wall Detail', 'Strut Details', 'Plate Properties', 'Anchor Properties', 'Line Load', 'Borehole', 'Excavation Details', 'Construction Sequence']
+2025-11-04 09:11:55.093 [INFO]  DEBUG: Found material: Fill
+2025-11-04 09:11:55.094 [INFO]  DEBUG: Found material: F1
+2025-11-04 09:11:55.095 [INFO]  DEBUG: Found material: F2
+2025-11-04 09:11:55.095 [INFO]  DEBUG: Found material: OA(E)
+2025-11-04 09:11:55.096 [INFO]  DEBUG: Found material: OA(D)
+2025-11-04 09:11:55.097 [INFO]  DEBUG: Found material: OA(C)
+2025-11-04 09:11:55.098 [INFO]  DEBUG: Found material: OA(B)
+2025-11-04 09:11:55.098 [INFO]  DEBUG: Found material: OA(A)
+2025-11-04 09:11:55.099 [INFO]  DEBUG: Found material: G(II)
+2025-11-04 09:11:55.100 [INFO]  DEBUG: Found material: G(III)
+2025-11-04 09:11:55.101 [INFO]  DEBUG: Found material: G(IV)
+2025-11-04 09:11:55.102 [INFO]  DEBUG: Found material: G(V)
+2025-11-04 09:11:55.103 [INFO]  DEBUG: Found material: G(VI)
+2025-11-04 09:11:55.103 [INFO]  DEBUG: Found material: S(II)
+2025-11-04 09:11:55.104 [INFO]  DEBUG: Found material: S(III)
+2025-11-04 09:11:55.105 [INFO]  DEBUG: Found material: S(IV)
+2025-11-04 09:11:55.106 [INFO]  DEBUG: Found material: S(V)
+2025-11-04 09:11:55.107 [INFO]  DEBUG: Found material: S(VI)
+2025-11-04 09:11:55.108 [INFO]  DEBUG: Total materials found: 18

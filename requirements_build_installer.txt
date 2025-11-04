@@ -1,0 +1,30 @@
+
+pyinstaller>=5.13.0
+pyarmor>=8.0.0
+Pillow>=9.0.0  # For creating basic icons
+requests>=2.28.0
+
+# Optional but recommended for better builds
+setuptools>=65.0.0
+wheel>=0.38.0
+
+# For advanced icon creation (optional)
+# Wand>=0.6.10  # ImageMagick binding for advanced image processing
+# Your existing requirements should also be installed
+# tkinter (usually comes with Python)
+# mysql-connector-python
+# flet
+# pandas
+# openpyxl  
+# pyyaml
+# scipy
+# numpy
+# apscheduler
+# requests
+# xlsxwriter
+
+# Note: For installer creation, you need to install one of these manually:
+# 1. Inno Setup (Windows) - Download from: https://jrsoftware.org/isdl.php
+# 2. NSIS (Windows) - Download from: https://nsis.sourceforge.io/Download
+# 3. For Linux: Use the script to generate .deb/.rpm packages
+# 4. For macOS: Use the script to generate .dmg packages

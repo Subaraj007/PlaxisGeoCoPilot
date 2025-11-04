@@ -1,0 +1,37 @@
+# Build artifacts (if not already present)
+build/
+dist/
+obfuscated_src/
+protected_src/
+pyarmor_obfuscated/
+
+# build spec files
+build_obfuscated.spec
+build_protected.spec
+build_fallback.spec
+
+product_version.txt
+
+# installer files
+installer_script.iss
+installer/
+
+# PyArmor related files
+pyarmor.error.log
+pyarmor.bug.log\
+
+# Other build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.spec
+.Python
+*.so
+*.c
+*.csv
+.coverage
+.pytest_cache/
+# Version file
+version.py
+
